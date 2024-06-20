@@ -1,0 +1,26 @@
+◆Step1.
+PS C:\Users\devmi> mkdir git_challenge
+PS C:\Users\devmi> cd .\git_challenge\
+
+PS C:\Users\devmi\git_challenge> git init
+Initialized empty Git repository in C:/Users/devmi/git_challenge/.git/
+
+◆Step2. ◆Step3.(1回目)
+PS C:\Users\devmi\git_challenge> echo "Hello, world!" >> hello_world.txt
+PS C:\Users\devmi\git_challenge> git add .\hello_world.txt
+PS C:\Users\devmi\git_challenge> git commit -m "hello_world.txtを追加"
+[main (root-commit) 039505e] hello_world.txtを追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+
+◆Step3.(2回目)
+PS C:\Users\devmi\git_challenge> echo "こんにちは、世界！" >> hello_world.txt
+PS C:\Users\devmi\git_challenge> git add .\hello_world.txt                   
+PS C:\Users\devmi\git_challenge> git commit -m "日本語訳を追記"              
+[main 9105494] 日本語訳を追記
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+◆Step4.
+PS C:\Users\devmi\git_challenge> git log --oneline
+9105494 (HEAD -> main) 日本語訳を追記
+039505e hello_world.txtを追加
